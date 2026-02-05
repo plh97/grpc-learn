@@ -30,6 +30,6 @@ func main() {
 		return
 	}
 	var resp Res
-	client.Call("Server.Add1", req, &resp)
+	client.Call("Server.Add", req, &resp)
 	fmt.Println(resp.Num)
 }

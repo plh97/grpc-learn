@@ -19,7 +19,7 @@ type Res struct {
 	Num int
 }
 
-func (s *Server) Add1(r Req, resp *Res) error {
+func (s *Server) Add(r Req, resp *Res) error {
 	resp.Num = r.Num1 + r.Num2
 	fmt.Println("request is coming", r)
 	return nil
