@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+package hello_grpc;
+
+option go_package = "/hello_grpc";
+

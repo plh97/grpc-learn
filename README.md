@@ -23,3 +23,9 @@ go run .
 ```
 
 The client calls `Server.Add` on the server and prints the sum.
+
+### Issue from original gRPC
+
+1. hard to write, need to take more care of maintaining
+
+2. no tip from IDE

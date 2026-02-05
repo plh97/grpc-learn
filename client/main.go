@@ -30,6 +30,10 @@ func main() {
 		return
 	}
 	var resp Res
-	client.Call("Server.Add", req, &resp)
+	err = client.Call("Server.Add1", req, &resp)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 	fmt.Println(resp.Num)
 }
